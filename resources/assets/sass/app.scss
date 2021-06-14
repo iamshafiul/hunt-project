@@ -106,71 +106,101 @@ $primary-color: #fec600;
         banner part start
 ====================================== */
 #banner-part{
-     
-        & .banner{
-                background-image: url('../../assets/img/Slider-Image-01.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                // clip-path: polygon(0 9%, 100% 0, 100% 91%, 0% 100%);
-                & .ovarlay{
-                        background-color: rgba(12, 12, 12, .8);
-                        text-align: center;
-                        color: $text-white;
-                        padding: 200px 0;
-                        & .content{
-                                & h3{
-                                        font-size: 36px;
-                                        color: $text-white;
-                                }
-                                & h1{
-                                        font-size: 55px;
-                                        font-weight: 700;
-                                        color: $primary-color;
-                                        margin-bottom: 8px;
-                                }
-                                & p{
-                                        width: 545px;
-                                        color: #f1f1f1;
-                                        margin: 0 auto;
-                                        line-height: 24px;
-                                        margin-bottom: 55px;
-                                }
 
-                                & a.banner-btn-right{
-                                        background-color: transparent;
-                                        color: $text-white;
-                                        &:hover{
-                                                background-color:$primary-color;
-                                                color: #111111;
+        & .banner-slider{
+                & .banner{
+                        background-image: url('../../assets/img/Slider-Image-01.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+
+                        & .ovarlay{
+                                background-color: rgba(12, 12, 12, .8);
+                                text-align: center;
+                                color: $text-white;
+                                padding: 200px 0;
+                                & .content{
+                                        & h3{
+                                                font-size: 36px;
+                                                color: $text-white;
                                         }
-                                }
-
-                                        & a{
-                                                background-color: #fec600;
-                                                color: #111111;
-                                                font-size: 16px;
-                                                display: inline-block;
-                                                padding: 10px 25px;
-                                                cursor: pointer;
-                                                margin: 0 5px;
-                                                border: 1px solid $text-white;
-                                                transition: .4s;
+                                        & h1{
+                                                font-size: 55px;
+                                                font-weight: 700;
+                                                color: $primary-color;
+                                                margin-bottom: 8px;
+                                        }
+                                        & p{
+                                                width: 545px;
+                                                color: #f1f1f1;
+                                                margin: 0 auto;
+                                                line-height: 24px;
+                                                margin-bottom: 55px;
+                                        }
+        
+                                        & a.banner-btn-right{
+                                                background-color: transparent;
+                                                color: $text-white;
                                                 &:hover{
-                                                        border-color: $text-white;
-                                                        background-color: transparent;
-                                                        color: $text-white;
+                                                        background-color:$primary-color;
+                                                        color: #111111;
                                                 }
                                         }
-
-                                       
+        
+                                                & a{
+                                                        background-color: #fec600;
+                                                        color: #111111;
+                                                        font-size: 16px;
+                                                        display: inline-block;
+                                                        padding: 10px 25px;
+                                                        cursor: pointer;
+                                                        margin: 0 5px;
+                                                        border: 1px solid $text-white;
+                                                        transition: .4s;
+                                                        &:hover{
+                                                                border-color: $text-white;
+                                                                background-color: transparent;
+                                                                color: $text-white;
+                                                        }
+                                                }
+        
+                                               
+                                }
+                              
                         }
-                      
+        
+                       
                 }
-        }
-        & .prev, .next{
-                font-size: 40px;
-                opacity: 1;
+
+                & i.fas.fa-arrow-right.slick-arrow {
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 30px;
+                        height: 30px;
+                        background: #f1f1f1;
+                        line-height: 30px;
+                        text-align: center;
+                        border-radius: 50%;
+                        z-index: 9;
+                    }
+                    
+                    & i.fas.fa-arrow-left.slick-arrow {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 20px;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        background-color: #f1f1f1;
+                        border-radius: 50%;
+                        z-index: 9;
+                    }
+               
         }
 }
 

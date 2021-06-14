@@ -95,44 +95,46 @@ h3 {
 /* ===================================
         banner part start
 ====================================== */
-#banner-part .banner {
+#banner-part .banner-slider .banner {
   background-image: url("../../assets/img/Slider-Image-01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
 }
-#banner-part .banner .ovarlay {
+#banner-part .banner-slider .banner .ovarlay {
   background-color: rgba(12, 12, 12, 0.8);
   text-align: center;
   color: #fff;
   padding: 200px 0;
 }
-#banner-part .banner .ovarlay .content h3 {
+#banner-part .banner-slider .banner .ovarlay .content h3 {
   font-size: 36px;
   color: #fff;
 }
-#banner-part .banner .ovarlay .content h1 {
+#banner-part .banner-slider .banner .ovarlay .content h1 {
   font-size: 55px;
   font-weight: 700;
   color: #fec600;
   margin-bottom: 8px;
 }
-#banner-part .banner .ovarlay .content p {
+#banner-part .banner-slider .banner .ovarlay .content p {
   width: 545px;
   color: #f1f1f1;
   margin: 0 auto;
   line-height: 24px;
   margin-bottom: 55px;
 }
-#banner-part .banner .ovarlay .content a.banner-btn-right {
+#banner-part .banner-slider .banner .ovarlay .content a.banner-btn-right {
   background-color: transparent;
   color: #fff;
 }
-#banner-part .banner .ovarlay .content a.banner-btn-right:hover {
+#banner-part .banner-slider .banner .ovarlay .content a.banner-btn-right:hover {
   background-color: #fec600;
   color: #111111;
 }
-#banner-part .banner .ovarlay .content a {
+#banner-part .banner-slider .banner .ovarlay .content a {
   background-color: #fec600;
   color: #111111;
   font-size: 16px;
@@ -143,14 +145,36 @@ h3 {
   border: 1px solid #fff;
   transition: 0.4s;
 }
-#banner-part .banner .ovarlay .content a:hover {
+#banner-part .banner-slider .banner .ovarlay .content a:hover {
   border-color: #fff;
   background-color: transparent;
   color: #fff;
 }
-#banner-part .prev, #banner-part .next {
-  font-size: 40px;
-  opacity: 1;
+#banner-part .banner-slider i.fas.fa-arrow-right.slick-arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 9;
+}
+#banner-part .banner-slider i.fas.fa-arrow-left.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  z-index: 9;
 }
 
 /* ===================================

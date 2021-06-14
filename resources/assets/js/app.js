@@ -1,6 +1,20 @@
 $(document).ready(function () {
 
   // slick slider 
+  $('.banner-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<i class="fas fa-arrow-left"></i>',
+    nextArrow:'<i class="fas fa-arrow-right"></i>',
+    speed: 1000,
+    fade: true,
+    cssEase: 'linear'
+  
+  });
+
+  // slick slider 
   $('.services-slick-slider').slick({
     infinite: true,
     slidesToShow: 3,
