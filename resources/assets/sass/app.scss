@@ -137,6 +137,15 @@ $primary-color: #fec600;
                                         margin-bottom: 55px;
                                 }
 
+                                & a.banner-btn-right{
+                                        background-color: transparent;
+                                        color: $text-white;
+                                        &:hover{
+                                                background-color:$primary-color;
+                                                color: #111111;
+                                        }
+                                }
+
                                         & a{
                                                 background-color: #fec600;
                                                 color: #111111;
@@ -145,7 +154,7 @@ $primary-color: #fec600;
                                                 padding: 10px 25px;
                                                 cursor: pointer;
                                                 margin: 0 5px;
-                                                border: 1px solid transparent;
+                                                border: 1px solid $text-white;
                                                 transition: .4s;
                                                 &:hover{
                                                         border-color: $text-white;
@@ -153,6 +162,8 @@ $primary-color: #fec600;
                                                         color: $text-white;
                                                 }
                                         }
+
+                                       
                         }
                       
                 }
@@ -174,7 +185,6 @@ $primary-color: #fec600;
 ====================================== */
 #about-part{
         padding: 100px 0;
-        // clip-path: polygon(0 9%, 100% 0, 100% 91%, 0% 100%);
         background-color: $text-white;
     
 
@@ -732,15 +742,20 @@ $primary-color: #fec600;
         background-position: initial;
         clip-path: polygon(0 25%, 100% 0, 100% 77%, 0% 100%);
         & .ovarlay{
-                background-color: rgba(12, 12, 12,.7);
+                background-color: rgba(12, 12, 12, 7);
                 width: 100%;
                 height: 100%;
                 padding: 100px 0;
                 & .item{
-                        padding: 50px 0;
+                        padding: 30px 0;
                         border: 1px solid $text-white;
                         text-align: center;
                         color: $text-white;
+                        & h5{
+                                font-size: 20px;
+                                line-height: 40px;
+                                color: #ffffff;
+                        }
                 }
                 & .alignment{
                         transform: rotate(-3deg);
@@ -786,6 +801,7 @@ $primary-color: #fec600;
                                         line-height: 50px;
                                         text-align: center;
                                 }
+
                         }
 
                         & img{
@@ -816,6 +832,10 @@ $primary-color: #fec600;
                                         text-align: center;
                                         border-radius: 50%;
                                         margin: 20px 8px;
+                                        transition: .4s;
+                                        &:hover{
+                                                background-color: $primary-color;
+                                        }
                                 }
                         }
                         

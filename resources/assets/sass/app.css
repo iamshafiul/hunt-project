@@ -124,6 +124,14 @@ h3 {
   line-height: 24px;
   margin-bottom: 55px;
 }
+#banner-part .banner .ovarlay .content a.banner-btn-right {
+  background-color: transparent;
+  color: #fff;
+}
+#banner-part .banner .ovarlay .content a.banner-btn-right:hover {
+  background-color: #fec600;
+  color: #111111;
+}
 #banner-part .banner .ovarlay .content a {
   background-color: #fec600;
   color: #111111;
@@ -132,7 +140,7 @@ h3 {
   padding: 10px 25px;
   cursor: pointer;
   margin: 0 5px;
-  border: 1px solid transparent;
+  border: 1px solid #fff;
   transition: 0.4s;
 }
 #banner-part .banner .ovarlay .content a:hover {
@@ -664,16 +672,21 @@ h3 {
           clip-path: polygon(0 25%, 100% 0, 100% 77%, 0% 100%);
 }
 #counter-part .ovarlay {
-  background-color: rgba(12, 12, 12, 0.7);
+  background-color: #0c0c0c;
   width: 100%;
   height: 100%;
   padding: 100px 0;
 }
 #counter-part .ovarlay .item {
-  padding: 50px 0;
+  padding: 30px 0;
   border: 1px solid #fff;
   text-align: center;
   color: #fff;
+}
+#counter-part .ovarlay .item h5 {
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
 }
 #counter-part .ovarlay .alignment {
   transform: rotate(-3deg);
@@ -749,6 +762,10 @@ h3 {
   text-align: center;
   border-radius: 50%;
   margin: 20px 8px;
+  transition: 0.4s;
+}
+#team-part .item .details .icon i:hover {
+  background-color: #fec600;
 }
 #team-part .item:hover .img .ovarlay {
   height: 100%;
